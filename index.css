@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: wheat;
+}
+nav{
+    position: fixed;
+    border: 1px solid black;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li button{
+    
+    margin-left: 100px;
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.deata{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.deata .head{
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+.deata .head .for{
+    height: 100%;
+    width: 45%;
+}
+.deata .head .hotel{
+    border: .8px solid wheat;
+    position: absolute;
+    top: 50px;
+    height: 379px;
+    width: 484px;
+    left: 60px;
+    top: 76px;
+    background-color: white;
+    border-radius: 10px;
+}
+.deata .head .hotel form{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.deata .head .hotel form .country{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.deata .head .hotel form .country input{
+    height: 30px;
+    width: 19%;
+    display: flex;align-items: center;
+    justify-content: center;
+}
+.deata .head .hotel form .area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.deata .head .hotel form .area input{
+    border: none;
+    height: 50px;
+    font-size: 23px;
+    padding-left: 20px;
+}
+.deata .head .hotel form .cheak{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deata .head .hotel form .cheak .mid button{
+    height: auto;
+    width: 50px;
+    border-radius: 5px;
+    background-color: rgb(139, 139, 170);
+}
+.deata .head .hotel form .cheak input{
+    border: none;
+}
+.deata .head .hotel form .guist{
+    display: flex;
+    flex-direction: column;
+}
+.deata .head .hotel form .guist input{
+    border: none;
+    font-size: 20px;
+    height: 30px;
+}
+#subbtn{
+    position: absolute;
+    top: 368px;
+    left: 107px;
+    height: 50px;
+    width: 250px;
+    border-radius: 15px;
+    background-color: orange;
+    color: white;
+    font-size: 30px;
+}
+hr{
+    width: 100%;
+    height: 1px;
+}
+.deata .head .slid{
+    height: 100%;
+    width: 45%;
+}
+.deata .head .slid .np{
+    position: absolute;
+    margin-top: 143px;
+    right: 93px;
+    height: 50px;
+    width: 41%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .deata .head .slid .np .fa{
+    height: 50px;
+    width: 50px;
+    color: black;
+
+} */
+.deata .head .slid .slidd{
+    margin-top: 100px;
+    height: 180px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.deata .head .slid .slidd img{
+    border-radius: 15px;
+    height: 88%;
+    width: 47%;
+}
+.deata .explore{
+    display: grid;
+    place-items: center;
+}
+.deata .explore button{
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+.che{
+    height: 500px;
+    width: 100%;
+}
+.che{
+    padding: 0 50px;
+    height: 250px;
+    width: 100%;
+}
+.che .llinkh{
+    height: 50px;
+    width: 100%;
+}
+.che .llinkh ul{
+    padding: 0 10px;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.che .llinkh ul li{
+    list-style: none;
+    bottom: 1px solid blue;
+}
+.che .llinkh ul li a{
+    color: white;
+    text-decoration: 2px solid blue;
+}
+.che .linkimg{
+    
+    height: 200px;
+    width: 100%;
+}
+.che .linkimg ul{
+    padding: 0 20px;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.che .linkimg ul li{
+    height: 90%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+    bottom: 1px solid blue;
+}
+.che .linkimg ul li img{
+    height: 90%;
+    width: 100%;
+}
+.hotel{
+    margin-top: 10px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.hotel ul{
+    height: 240px;
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.hotel ul li{
+    height: 100%;
+    width: 22%;
+    list-style: none;
+    border: 0.5px solid gray;
+}
+.hotel ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hotel ul li img{
+    border: 1px solid red;
+    height: 54%;
+    width: 100%;
+    border-radius: 10px;
+}
+.hotel ul li .ouy{
+    height: 43%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+.hotel ul li .ouy p{
+    font-size: 12px;
+}
+.hotel ul li .ouy p img{
+    height: 14px;
+    width: 14px;
+    border: none;
+}
+.hotel ul li .ouy h4 img{
+    height: 14px;
+    width: 14px;
+    border: none;
+}
+.fa{
+    height: 15px;
+    width: 15px;
+}
+.fa-star{
+    color: orange;
+}
+.fa-rupee-sign{
+    color: black;
+}
+.hotel ul .off{
+    height: 100%;
+    width: 200px;
+    
+}
+.hotel ul .off img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.hotel .para{
+    padding: 5px 50px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hotel .para .parar{
+    background-color: white;
+    height: 21px;
+    border-radius: 8px;
+    width: 77px;
+    align-items: center;
+    text-align: center;
+}
+.hotel .para .parar button{
+    border: none;
+    background-color: white;
+    width: 34px;
+}
+.bocket{
+    height: 1190px;
+    width: 100%;
+    padding: 10px 50px;
+}
+.bocket .he{
+    height:70px;
+    width: 100%;
+}
+.bocket .fst{
+    margin: 20px 0px;
+    height: 365px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bocket .fst .left{
+    height: 100%;
+    width: 300px;
+}
+.bocket .fst .left img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.bocket .fst .righ{
+    height: 361px;
+    width: 837px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.bocket .fst .righ img{
+    height: 169px;
+    width: 385px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.footer{
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+    padding: 0 70px;
+}
+.footer .headn{
+    font-size: 30px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer .lin{
+    margin-top: 20px;
+    height: 387px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer .lin .ul{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .lin .ul ul{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footer .lin .ul ul li{
+    list-style: none;
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+    color: black;
+    margin-top: 10px;
+}
+.footer .lin .ull{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}
+/* .footer .lin .ull ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer .lin .ull ul li{
+    margin: 0 13px;
+    list-style: none;
+    height: 30px;
+    color: rgba(245, 242, 238, 0.979);
+}
+.footer .lin .ull ul li img{
+    height: 100%;
+    width: 100%;
+} */
+.footer .copy{
+    height: 100px;
+    width: 100%;
+    background-color: brown;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+/* .footer.copy span{
+    height: 100%;
+    width: auto;
+    font-size: 13px;
+}
+.footer .copy span{
+    width: 70%;
+    font-size: 13px;
+}
+.footer .copy ul{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .copy ul li{
+    height: 50px;
+    margin: 0 5px;
+    width: auto;
+    list-style: none;
+    color: rgba(255, 235, 205, 0.692);
+} */

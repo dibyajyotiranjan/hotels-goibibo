@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#"><button>Hotels</button></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="deata">
+        <div class="head">
+            <div class="for">
+                <div class="hotel">
+                    <form id="formofhotel">
+                        <div class="country">
+                         <input type="radio"id="india" name="country" value="india">india
+                         <input type="radio" value="international" name="country">international
+                        </div>
+                        <div class="area">
+                           <span>where</span>
+                        <input type="text" placeholder="e.g - Area, Landmark& Hotel id" id="area"> 
+                        <i class="fa fa-search"></i>
+                        </div>
+                        
+                        <hr>
+                        <div class="cheak">
+                            <div class="in">
+                               <span>Cheak-in</span>
+                            <input type="date" id="cheakin" value="2021-11-05"> 
+                            </div>
+                            <div class="mid">
+                                <button>1Night</button>
+                            </div>
+                            <div class="out">
+                                <span>Cheak-out</span>
+                            <input type="date" id="cheakout" value="2021-11-05">
+                            </div>
+                            
+                        </div>
+                        <hr>
+                        <div class="guist">
+                            <span>Guist & Rooms</span>
+                            <input type="text" placeholder="2 Guist in one room" id="guist" onclick="guistClick()">
+                            <hr>
+                            
+                        </div>
+                        <button id="subbtn" type="submit">Search Hotel</button>
+                    </form>
+                </div>
+            </div>
+            <div class="slid">
+                <div class="np">
+                    <i class="fa fa-chevron-left"></i>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+               <div class="slidd">
+                   <img src="./download.png" alt="">
+                   <img src="./download.png" alt="">
+               </div>
+            </div>
+        </div>
+        <div class="explore">
+            <button>Explore More <i class="fa fa-arrow-down"></i></button>
+        </div>
+    </div>
+    <div class="che">
+        <div class="llinkh">
+            <ul>
+                <li><a href="#">Beach Vacations</a> </li>
+                <li><a href="#">Getaways</a> </li>
+                <li><a href="#">Calling</a> </li>
+                <li><a href="#">Stay Like Royals</a> </li>
+                <li><a href="#">Indian Pilgrimages</a> </li>
+                <li><a href="#">Party Destinations</a> </li>  
+            </ul>
+        </div>
+        <div class="linkimg">
+            <ul>
+                <li><img src="./download.png" alt=""><span>Ooty</span></li>
+                <li><img src="./download.png" alt=""><span>Ooty</span></li>
+                <li><img src="./download.png" alt=""><span>Ooty</span></li>
+                <li><img src="./download.png" alt=""><span>Ooty</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hotel">
+        <div class="para">
+            <div class="paral">
+                <h2>goSafe Properties</h2>
+                <span> Sanitized Environment | SAFE Practices | Trained STAFF</span>
+            </div>
+            <div class="parar">
+              <button><i class="fa fa-arrow-left"></i></button>  
+              <button><i class="fa fa-arrow-right"></i></button>
+            </div>
+            
+        </div>
+        <ul>
+            <div class="off">
+                <img src="./download.png" alt="">
+            </div>
+            <li>
+            <a href="#">
+                <img src="./download.png" alt=""> 
+                <div class="ouy">
+                   <div class="leftpro">
+                    <span><i class="fa fa-star"></i><i class="fa fa-star" ></i><i class="fa fa-star"></i></span>
+                    <h3>Nova Suites - SHA Plus</h3>
+                    <p>North Pattaya</p>
+                    <div class="rr">
+                        <div class="boxx"></div>
+                        <p>4 Rating</p>
+                   </div>
+                </div>
+                <div class="rightpro">
+                    <p><img src="./rupee-sign-solid.svg" alt=""> 499</p>
+                    <h4><img src="./rupee-sign-solid.svg" alt=""> 300</h4>
+                    <p>1 Room Per Person</p>
+                </div>  
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./download.png" alt=""> 
+                    <div class="ouy">
+                       <div class="leftpro">
+                        <span><i class="fa fa-star"></i><i class="fa fa-star" ></i><i class="fa fa-star"></i></span>
+                        <h3>Nova Suites - SHA Plus</h3>
+                        <p>North Pattaya</p>
+                        <div class="rr">
+                            <div class="boxx"></div>
+                            <p>4 Rating</p>
+                       </div>
+                    </div>
+                    <div class="rightpro">
+                        <p><img src="./rupee-sign-solid.svg" alt=""> 499</p>
+                        <h4><img src="./rupee-sign-solid.svg" alt=""> 300</h4>
+                        <p>1 Room Per Person</p>
+                    </div>  
+                    </div>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./download.png" alt=""> 
+                        <div class="ouy">
+                           <div class="leftpro">
+                            <span><i class="fa fa-star"></i><i class="fa fa-star" ></i><i class="fa fa-star"></i></span>
+                            <h3>Nova Suites - SHA Plus</h3>
+                            <p>North Pattaya</p>
+                            <div class="rr">
+                                <div class="boxx"></div>
+                                <p>4 Rating</p>
+                           </div>
+                        </div>
+                        <div class="rightpro">
+                            <p><img src="./rupee-sign-solid.svg" alt=""> 499</p>
+                            <h4><img src="./rupee-sign-solid.svg" alt=""> 300</h4>
+                            <p>1 Room Per Person</p>
+                        </div>  
+                        </div>
+                    </a>
+                    </li>
+        </ul>
+    </div>
+    <div class="hotel">
+        <div class="para">
+            <div class="paral">
+                <h2>goSafe Properties</h2>
+                <span> Sanitized Environment | SAFE Practices | Trained STAFF</span>
+            </div>
+            <div class="parar">
+              <button><i class="fa fa-arrow-left"></i></button>  
+              <button><i class="fa fa-arrow-right"></i></button>
+            </div>
+            
+        </div>
+        <ul>
+            <div class="off">
+                <img src="./download.png" alt="">
+            </div>
+            <li>
+            <a href="#">
+                <img src="./download.png" alt=""> 
+                <div class="ouy">
+                   <div class="leftpro">
+                    <span><i class="fa fa-star"></i><i class="fa fa-star" ></i><i class="fa fa-star"></i></span>
+                    <h3>Nova Suites - SHA Plus</h3>
+                    <p>North Pattaya</p>
+                    <div class="rr">
+                        <div class="boxx"></div>
+                        <p>4 Rating</p>
+                   </div>
+                </div>
+                <div class="rightpro">
+                    <p><img src="./rupee-sign-solid.svg" alt=""> 499</p>
+                    <h4><img src="./rupee-sign-solid.svg" alt=""> 300</h4>
+                    <p>1 Room Per Person</p>
+                </div>  
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./download.png" alt=""> 
+                    <div class="ouy">
+                       <div class="leftpro">
+                        <span><i class="fa fa-star"></i><i class="fa fa-star" ></i><i class="fa fa-star"></i></span>
+                        <h3>Nova Suites - SHA Plus</h3>
+                        <p>North Pattaya</p>
+                        <div class="rr">
+                            <div class="boxx"></div>
+                            <p>4 Rating</p>
+                       </div>
+                    </div>
+                    <div class="rightpro">
+                        <p><img src="./rupee-sign-solid.svg" alt=""> 499</p>
+                        <h4><img src="./rupee-sign-solid.svg" alt=""> 300</h4>
+                        <p>1 Room Per Person</p>
+                    </div>  
+                    </div>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./download.png" alt=""> 
+                        <div class="ouy">
+                           <div class="leftpro">
+                            <span><i class="fa fa-star"></i><i class="fa fa-star" ></i><i class="fa fa-star"></i></span>
+                            <h3>Nova Suites - SHA Plus</h3>
+                            <p>North Pattaya</p>
+                            <div class="rr">
+                                <div class="boxx"></div>
+                                <p>4 Rating</p>
+                           </div>
+                        </div>
+                        <div class="rightpro">
+                            <p><img src="./rupee-sign-solid.svg" alt=""> 499</p>
+                            <h4><img src="./rupee-sign-solid.svg" alt=""> 300</h4>
+                            <p>1 Room Per Person</p>
+                        </div>  
+                        </div>
+                    </a>
+                    </li>
+        </ul>
+    </div>
+    <div class="hotel">
+        <div class="para">
+            <div class="paral">
+                <h2>goSafe Properties</h2>
+                <span> Sanitized Environment | SAFE Practices | Trained STAFF</span>
+            </div>
+            <div class="parar">
+              <button><i class="fa fa-arrow-left"></i></button>  
+              <button><i class="fa fa-arrow-right"></i></button>
+            </div>
+            
+        </div>
+        <ul>
+            <div class="off">
+                <img src="./download.png" alt="">
+            </div>
+            <li>
+            <a href="#">
+                <img src="./download.png" alt=""> 
+                <div class="ouy">
+                   <div class="leftpro">
+                    <span><i class="fa fa-star"></i><i class="fa fa-star" ></i><i class="fa fa-star"></i></span>
+                    <h3>Nova Suites - SHA Plus</h3>
+                    <p>North Pattaya</p>
+                    <div class="rr">
+                        <div class="boxx"></div>
+                        <p>4 Rating</p>
+                   </div>
+                </div>
+                <div class="rightpro">
+                    <p><img src="./rupee-sign-solid.svg" alt=""> 499</p>
+                    <h4><img src="./rupee-sign-solid.svg" alt=""> 300</h4>
+                    <p>1 Room Per Person</p>
+                </div>  
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./download.png" alt=""> 
+                    <div class="ouy">
+                       <div class="leftpro">
+                        <span><i class="fa fa-star"></i><i class="fa fa-star" ></i><i class="fa fa-star"></i></span>
+                        <h3>Nova Suites - SHA Plus</h3>
+                        <p>North Pattaya</p>
+                        <div class="rr">
+                            <div class="boxx"></div>
+                            <p>4 Rating</p>
+                       </div>
+                    </div>
+                    <div class="rightpro">
+                        <p>499</p>
+                        <h4><img src="./rupee-sign-solid.svg" alt=""> 300</h4>
+                        <p>1 Room Per Person</p>
+                    </div>  
+                    </div>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./download.png" alt=""> 
+                        <div class="ouy">
+                           <div class="leftpro">
+                            <span><i class="fa fa-star"></i><i class="fa fa-star" ></i><i class="fa fa-star"></i></span>
+                            <h3>Nova Suites - SHA Plus</h3>
+                            <p>North Pattaya</p>
+                            <div class="rr">
+                                <div class="boxx"></div>
+                                <p>4 Rating</p>
+                           </div>
+                        </div>
+                        <div class="rightpro">
+                            <p>499</p>
+                            <h4><img src="./rupee-sign-solid.svg" alt=""> 300</h4>
+                            <p>1 Room Per Person</p>
+                        </div>  
+                        </div>
+                    </a>
+                    </li>
+        </ul>
+    </div>
+<div class="bocket">
+    <div class="he">
+       <h1>Popular Destinations</h1> 
+       <span>We have selected some best locations around the world for you.</span>
+    </div>
+    <div class="fst">
+        <div class="left">
+            <img src="./download.png" alt="">
+        </div>
+        <div class="righ">
+            <img src="./download.png" alt="">
+            <img src="./download.png" alt="">
+            <img src="./download.png" alt="">
+            <img src="./download.png" alt="">
+        </div>
+    </div>
+    <div class="fst">
+        <div class="righ">
+            <img src="./download.png" alt="">
+            <img src="./download.png" alt="">
+            <img src="./download.png" alt="">
+            <img src="./download.png" alt="">
+        </div>
+        <div class="left">
+            <img src="./download.png" alt="">
+        </div>
+    </div>
+    <div class="fst">
+        <div class="left">
+            <img src="./download.png" alt="">
+        </div>
+        <div class="righ">
+            <img src="./download.png" alt="">
+            <img src="./download.png" alt="">
+            <img src="./download.png" alt="">
+            <img src="./download.png" alt="">
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <hr>
+            <div class="lin">
+                <div class="ul">
+                    
+                <ul>
+                    <h3>
+                    About GoDaddy</h3>
+                    <li>
+                        About Us 
+                    </li>
+                    <li> Contact Us</li>
+                    <li> Newsroom</li>
+                    <li>Investor Relations </li>
+                    <li>Annual Returns </li>
+                    <li>Corporate Social Responsibility </li>
+                    <li>Careers </li>
+                    <li>Trust Center </li>
+                    <li>Legal </li>
+                    <li>
+                      GoDaddy Blog  
+                    </li>
+                </ul>
+                    <ul>
+                        <h3>
+                          Support  
+                        </h3>
+                        <li>
+                           Product Support 
+                        </li>
+                        <li>
+                           Community 
+                        </li>
+                        <li>
+                            Report Abuse
+                        </li>
+                        <li>
+                            Resources
+                        </li>
+                    </ul>
+                     <ul>
+                         <h3>
+                           Resources  
+                         </h3>
+                         <li>
+                            Webmail 
+                         </li>
+                         <li>
+                             WHOIS
+                         </li>
+                         <li>
+                           ICANN Confirmation  
+                         </li>
+                         <li>
+                             Designers & Developers
+                         </li>
+                         <li>
+                             Redeem Code
+                         </li>
+                         <li>
+                            Product Catalog 
+                         </li>
+                         <li>
+                            Customer Testimonials 
+                         </li>
+                      </ul>
+                      <ul>
+                          <h3>
+                             Partner Programs 
+                          </h3>
+                          <li>
+                              Affiliates
+                          </li>
+                          <li>
+                             Reseller Programs 
+                          </li>
+                          <li>
+                            GoDaddy Pro  
+                          </li>
+                     </ul>
+                </div>
+                <div class="ull">
+                    Image put here
+                </div>
+            </div>
+            <hr>
+            <div class="copy">
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
+<!-- 
+
+ -->
